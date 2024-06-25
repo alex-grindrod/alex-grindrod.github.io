@@ -13,6 +13,36 @@ body {
     margin: 0;
 }
 
+
+@media screen and (max-width: 768px) {
+    .container_home{        
+        flex-direction: column;
+    }    
+    .right-column{
+        overflow-y: initial;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .timeline{        
+        margin: 50px auto;
+    }    
+    .timeline::after{        
+        left: 31px;
+    }
+    .container{
+        width: 100%;
+        padding-left: 80px;
+        padding-right: 25px;
+    }
+    .text-box{
+        font-size: 13px;
+    }
+    .text-box small{
+        margin-bottom: 10px ;
+    }
+}
+
 :root {
     --navbar-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
 }
@@ -67,7 +97,7 @@ header.shadow {
     color: #a50a0a;
 }
 
-.container{
+.container_home{
     display: flex;
     height: 500px;
 }
@@ -91,30 +121,6 @@ header.shadow {
 }
 
 
-@media screen and (max-width: 768px) {
-    .container{        
-        flex-direction: column;
-    }    
-    .right-column{
-        overflow-y: initial;
-    }
-}
-
-@media screen and (max-width: 1150px) {
-    .timeline{
-        width: 80vw;
-    }
-    .checkpoint:nth-child(odd),
-    .checkpoint:nth-child(even){
-        border-left: 3px solid #883;
-        padding-left: 3em;
-        margin-left: 5px;
-        position: absolute;
-        left: 0;
-        right: 0;
-        
-    }
-}
 
 .name{
     font-weight: 600;
@@ -139,71 +145,83 @@ header.shadow {
     display: inline-block;
 }
 
+
 .timeline{
-    margin: 5em auto;
-    max-width: 34.15em;
-    color: #C0C0C0;
-}
-
-.checkpoint{
-    max-width: 34em;
-    padding-top: 2em;
-    padding-bottom: 2em;
     position: relative;
+    max-width: 1200px;
+    margin: 100px auto;
 }
-.checkpoint div{
-    border: 2px solid #888;
-    border-radius: 1em;
-    padding: 1.5em;
+.container{
+    padding: 10px 50px;
+    position: relative;
+    width: 50%;
+    background: rgba(0, 0, 0, 0.01);
 }
-.checkpoint p{
-    line-height: 27px;
-    color: #ccc;
-}
-.checkpoint:nth-child(odd){
-    border-left: 3px solid #888;
-    padding-left: 3em;
-    transform: translateX(50%);
-}
-.checkpoint:nth-child(even){
-    border-right: 3px solid #888;
-    padding-right: 3em;
-    transform: translateX(-49.4%);
-}
-.checkpoint:nth-child(odd)::before,
-.checkpoint:nth-child(even)::before {
-    content: '';
-    background: #888;
-    width: 3em;
-    height: 3px;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-}
-
-.checkpoint:nth-child(odd)::before{
-    left: 0;
-}
-.checkpoint:nth-child(even)::before{
-    right: 0;
-}
-
-.checkpoint:nth-child(odd) div::before,
-.checkpoint:nth-child(even) div::before {
-    content: '';
+.text-box{
+    padding: 20px 30px;
     background: #fff;
-    box-shadow: 0 0 0.5em #0d71fc;
-    width: 0.8em;
-    height: 0.8em;
+    position: relative;
+    border-radius: 6px;
+    font-size: 15px;
+}
+.left-container{
+    left:0;
+}
+.right-container{
+    left:50%;
+}
+.container img{
     position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
+    width: 100px;
     border-radius: 50%;
+    right: -50px;
+    top: 32px;
+    z-index: 10;
+}
+.right-container img{
+    left: -50px
 }
 
-.checkpoint:nth-child(odd) div::before{
-    left: -0.5em;
+.timeline::after{
+    content: '';
+    position: absolute;
+    width: 6px;
+    height: 100%;
+    background: #fff;
+    top: 0;
+    left: 50%;
+    margin-left: -3px;
 }
-.checkpoint:nth-child(even) div::before{
-    right: -0.5em;
+
+.text-box h2{
+    font-weight: 600;
+}
+
+.text-box small{
+    display: inline-block;
+    margin-bottom: 15px;
+}
+
+.left-container-arrow{
+    height: 0;
+    width: 0;
+    position: absolute;
+    top: 28px;
+    z-index: 1;
+    border-top: 15px solid transparent;
+    border-bottom: 15px solid transparent;
+    border-left: 15px solid red;
+    right: -15px
+}
+
+.right-container-arrow{
+    height: 0;
+    width: 0;
+    position: absolute;
+    top: 28px;
+    z-index: 1;
+    border-top: 15px solid transparent;
+    border-bottom: 15px solid transparent;
+    border-right: 15px solid red;
+    left: -15px;
 }
