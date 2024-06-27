@@ -7,7 +7,7 @@
     <!-- Link to external CSS file -->
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body class = "body-projects">
     <header class = "header">
         <a href = "#" class="logo"></a>
         <nav class = "navbar">
@@ -16,7 +16,103 @@
             <a href = "projects.html" class="active">Projects</a>
         </nav>
         <a href = "#" class="logo"></a>
-        </header>
+    </header>
+
+    <div class = "card">
+        <input type="checkbox" id="ch">
+        <h2>ZFP Compression on ML Model Weights</h2> &nbsp; &nbsp;
+        <a href="https://github.com/alex-grindrod/eblc-model-compression" class="link">
+            <svg viewBox="0 0 16 16" width="37" height="32" xmlns="http://www.w3.org/2000/svg">
+                <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"></path>
+            </svg>
+        </a>
+        <a href="https://github.com/alex-grindrod/eblc-model-compression/blob/main/zfp_modelweights_paper.pdf" class="link">
+            <svg fill="#000000" height="33px" width="35px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 486.4 486.4" xml:space="preserve">
+                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                <g id="SVGRepo_iconCarrier"> <g> <g> <g> 
+                    <path d="M404.587,35.439h-89.6V9.5c0-5.246-4.254-9.5-9.5-9.5H180.913c-5.246,0-9.5,4.254-9.5,9.5v25.939h-89.6 c-5.246,0-9.5,4.254-9.5,9.5V476.9c0,5.246,4.254,9.5,9.5,9.5h322.774c5.246,0,9.5-4.254,9.5-9.5V44.939 C414.087,39.692,409.833,35.439,404.587,35.439z M190.413,19h105.574v54.749H190.413V19z M395.087,467.4H91.313V54.439h80.1 V83.25c0,5.246,4.254,9.5,9.5,9.5h124.574c5.246,0,9.5-4.254,9.5-9.5V54.439h80.1V467.4z"></path> <path d="M131.618,141.596h146.541c5.246,0,9.5-4.254,9.5-9.5c0-5.246-4.254-9.5-9.5-9.5H131.618c-5.246,0-9.5,4.254-9.5,9.5 C122.118,137.342,126.372,141.596,131.618,141.596z"></path> <path d="M357.656,171.443H131.618c-5.246,0-9.5,4.254-9.5,9.5c0,5.246,4.254,9.5,9.5,9.5h226.038c5.246,0,9.5-4.254,9.5-9.5 C367.156,175.697,362.902,171.443,357.656,171.443z"></path> <path d="M357.656,220.291H131.618c-5.246,0-9.5,4.254-9.5,9.5c0,5.246,4.254,9.5,9.5,9.5h226.038c5.246,0,9.5-4.254,9.5-9.5 C367.156,224.545,362.902,220.291,357.656,220.291z"></path> <path d="M357.656,266.264H131.618c-5.246,0-9.5,4.254-9.5,9.5c0,5.246,4.254,9.5,9.5,9.5h226.038c5.246,0,9.5-4.254,9.5-9.5 C367.156,270.518,362.902,266.264,357.656,266.264z"></path> <path d="M326.049,141.596h31.607c5.246,0,9.5-4.254,9.5-9.5c0-5.246-4.254-9.5-9.5-9.5h-31.607c-5.246,0-9.5,4.254-9.5,9.5 C316.549,137.342,320.803,141.596,326.049,141.596z"></path> <path d="M261.631,373.82c0-2.536-1.015-4.968-2.818-6.752l-36.227-35.857c-3.588-3.552-9.331-3.677-13.069-0.281 c-12.546,11.393-19.742,27.592-19.742,44.444c0,16.116,6.335,31.261,17.838,42.647c1.851,1.832,4.267,2.748,6.683,2.748 s4.832-0.915,6.683-2.748l37.835-37.449C260.617,378.787,261.631,376.356,261.631,373.82z M215.053,397.153 c-4.089-6.473-6.277-13.961-6.277-21.779c0-8.494,2.685-16.752,7.546-23.631l22.306,22.077L215.053,397.153z"></path> <path d="M341.655,332.729v-0.001l-0.001-0.001c-11.477-11.36-26.728-17.616-42.946-17.616c-15.234,0-29.811,5.618-41.044,15.819 c-1.931,1.753-3.055,4.222-3.112,6.829c-0.056,2.607,0.962,5.122,2.816,6.956l29.405,29.105l-31.013,30.697 c-1.803,1.784-2.817,4.216-2.817,6.752s1.014,4.967,2.817,6.752c11.477,11.36,26.73,17.616,42.949,17.616 c33.517,0,60.786-27.034,60.786-60.263C359.493,359.259,353.158,344.115,341.655,332.729L341.655,332.729z M278.731,339.128 c6.077-3.272,12.922-5.016,19.976-5.016c7.885,0,15.437,2.142,21.973,6.147l-20.403,20.195L278.731,339.128z M298.707,416.637 c-7.887,0-15.438-2.142-21.973-6.147l37.611-37.228l19.87-19.667c4.09,6.474,6.278,13.961,6.278,21.779 C340.493,398.127,321.748,416.637,298.707,416.637z"></path> <path d="M247.95,34.2h-32.3c-5.246,0-9.5,4.254-9.5,9.5c0,5.246,4.254,9.5,9.5,9.5h32.3c5.246,0,9.5-4.254,9.5-9.5 C257.45,38.454,253.196,34.2,247.95,34.2z"></path> </g> </g> </g> </g></svg>
+        </a>
+        <br>
+        <small>Mar. 2024 - June 2024</small>
+        <p> In this project, my team and I explored an EBLC (Error Bounded 
+            Lossy Compression) algorithm - ZFP compression - to observe its 
+            viability in compressing model weights because of its ability 
+            to control the degree of information loss.</p>
+        <div class="content">
+            <p><br>In practice, the compression of model weights is done using 
+                lossless compression algorithms because weights are usually very
+                sensitive to information loss. However, Quantization shows that
+                model weights can afford some degree of information loss without
+                compromising performance completely. <br><br> We decided to conduct
+                a comprehensive set of experiments to see if ZFP could be used with
+                existing techniques - Quantization, Pruning, Weight Clustering - to 
+                further reduce the size of models without losing too much performance.
+                The tests covered a variety of popular architectures like ResNet, Bert, 
+                and VGG. On its own, ZFP seems to perform similarly to traditional 
+                quantization, but it has the advantage of being more fine-grained 
+                in information loss. As a result, it can achieve a slightly better
+                compression ratio in many cases. </p>
+            <br>
+            <img src="images/projects_page/acc_v_comp.png" width="100%">
+            <br>
+            <p>If you want more information, feel free to explore the repository or the
+                project paper.
+            </p>
+            <label for = "ch">Show Less</label>
+        </div>
+        <label for = "ch">Read More</label>
+    </div>
+
+
+    <div class = "card">
+        <input type="checkbox" id="ch2">
+        <h2>Satellite Detection of Settlements in Need</h2> &nbsp; &nbsp;
+        <br>
+        <small>Jan. 2024 - June 2024</small>
+        <p> For this project, my team and I attempted the IEEE GRSS 2021 Track DSE challenge. The competition itself
+            had already ended, but we thought the challenge was interesting enough to pursue. The 
+            task was to develop a system to detect settlements without access to electricity.
+            The challenge provided a dataset comprised of various satellite data and the associated
+            four class groundtruth files. Performance was measured using F1 Score and Accuracy on the
+            test dataset.
+        </p>
+        <div class="content">
+            <p><br> At the start, we decided to split the task into its individual components using
+                binary decomposition. This way we could focus on development of individual semantic segmentation
+                models for settlement detection and electricity detection. Afterwards, we could combine 
+                the two to form a fusion model to provide a better prediction. The overlap in settlement
+                predictions and areas without electricity would be the areas of interest. We also included some 
+                transformations and augmentations to increase the robustness of our trained models
+                <br><br>
+                <img src="images/projects_page/ml_pipeline_transparent.png" width="100%">
+                <br>
+                Performing the dataset split involved modifying the groundtruth files by merging classes 
+                for the respective task resulting in a settlement detection tailored dataset and an 
+                electricity detection tailored dataset.
+                <br><br>
+                After performing comprehensive hyperparameter sweeps among multiple architectures, we were able to
+                select the best performing architectures in our trials based on their F1 scores. We tested multiple 
+                architectures ranging from decision trees, UNet variants, and VGG + Segmentor variants.
+                <br><br>
+                The best performing architecture for electricity detection turned out to be the classic UNet
+                architecture with an F1 score of <strong>0.894</strong>. For settlement detection, the best architecture was 
+                a VGG-19 backbone/classifier paired with an FCN (Fully Convolutional Network) Segmentor. 
+                It achieved an F1 score of <strong>0.760</strong>.
+                <br><br>
+                The final Fusion Model merged the outputs of these two models and reported a final F1 score of
+                <strong>0.71</strong> and an accuracy of <strong>0.77</strong> on the test dataset. Here is an example
+                of the model in action:
+                <br><br>
+                <img src="images/projects_page/fusion_prediction.png" width="100%">
+            </p>
+            <br>
+            <label for = "ch2">Show Less</label>
+        </div>
+        <label for = "ch2">Read More</label>
+    </div>
+
+    
 </body>
 
 
