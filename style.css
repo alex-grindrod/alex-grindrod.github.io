@@ -278,6 +278,17 @@ header.shadow {
     display: none;
 }
 
+#ch3{
+    display: none;
+}
+
+#ch3:checked ~ .content{
+    display: block;
+}
+#ch3:checked ~ label{
+    display: none;
+}
+
 label{
     display: inline-block;
     cursor: pointer;
