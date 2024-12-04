@@ -115,25 +115,30 @@
 
     <div class = "card">
         <input type="checkbox" id="ch3">
-        <h2>Automated Sign Language Translation (In Progress)</h2> &nbsp; &nbsp;
+        <h2>Automated Sign Language Translation</h2> &nbsp; &nbsp;
         <a href="https://github.com/alex-grindrod/asl-vision" class="link">
             <svg viewBox="0 0 16 16" width="37" height="32" xmlns="http://www.w3.org/2000/svg">
                 <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"></path>
             </svg>
         </a>
         <br>
-        <small>June. 2024 - Present</small>
+        <small>June. 2024 - Sep. 2024</small>
         <p> In this project, I experiment with various architectures to translate ASL (American Sign Language) 
             words from video input. The dataset used is 
-            <a href="https://github.com/alex-grindrod/asl-vision" class="link">
+            <a href="https://dxli94.github.io/WLASL/" class="link">
                 WLASL 2000
             </a>
             <br><br>
-            The architectures I am building/evaluating are variants of TCN, ST-GCN, GRU, and LSTM. The project
-            is still in-progress, but you can monitor updates/new commits with the github link above.
+            The architectures I am building/evaluating are variants of TCN, ST-GCN, GRU, and LSTM. The preprocessing
+            and annotation of videos was handled by Google's MediaPipe, FFMPEG, and OpenCV.
         </p>
         <div class="content">
-            <p><br>More Info Coming Soon</p>
+            <p>
+                <br>Overall the LSTM and TCN models were not able to capture the complexity of the dataset as accurately.
+                However, on the ST-GCN (Spatio-Temporal Graph Convolutional Network), an accuracy of 51.1% was achieved, and
+                on the I3D architecture, the model achieved a top-1 accuracy of 60.2%. Training and inference latency are potential
+                areas of improvement, aside from accuracy improvements.
+            </p>
             <label for = "ch3">Show Less</label>
         </div>
         <label for = "ch3">Read More</label>
